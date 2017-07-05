@@ -1,0 +1,1 @@
+#polynomial regression is a special case of linear regression.
