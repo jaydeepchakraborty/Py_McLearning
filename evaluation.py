@@ -86,7 +86,12 @@ def prntConfMtrix():
 ######################## plot ROC curves for multi-class problem Start ###########################
 def pltMulClsROC():
     
-    classes = [0,2] #it is unique number of classes
+    
+    y = np.array([1, 1, 2, 2])
+    scores = np.array([0.1, 0.4, 0.35, 0.8])# prob score of output
+    
+    
+    classes = [1,2] #it is unique number of classes
     n_classes = 2
     
     
@@ -98,7 +103,7 @@ def pltMulClsROC():
         #Label considered as positive and others are considered negative.
         # false positive rates
         # true positive rates
-        fpr[i], tpr[i], _ = roc_curve(actual, predictions, pos_label=classes[i])
+        fpr[i], tpr[i], _ = roc_curve(y, scores, pos_label=classes[i])
         roc_auc[i] = auc(fpr[i], tpr[i])
     
     
