@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/dogsvscats-0.001-2conv-basic.model"
+all_model_checkpoint_paths: "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/dogsvscats-0.001-2conv-basic.model"
