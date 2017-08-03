@@ -51,6 +51,8 @@ def get_iris_data():
 def main():
     train_X, test_X, train_Y, test_Y = get_iris_data()
     
+    x_size = train_X.shape[1]
+    
     
     
     
