@@ -46,7 +46,7 @@ init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 
-for i in range(1000):
+for i in range(1000): #1000 is epoch
     # load batch of images and correct answers
     batch_X, batch_Y = mnist.train.next_batch(100)
     feed_dict_train_data={X: batch_X, Y_: batch_Y}

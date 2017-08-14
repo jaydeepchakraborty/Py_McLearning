@@ -1,6 +1,6 @@
 # https://www.youtube.com/watch?v=wuo4JdG3SvU&index=1&list=PL9Hr9sNUjfsmEu1ZniY0XpHSzl5uihcXZ
 # This is an example of multiple layer neural network on mnist data 
-#but the weights are initialized to zeros - bas result
+#but the weights are initialized to zeros - bad result
 
 # sudo pip3 install tensorflow
 # sudo pip3 install tensorflow-gpu

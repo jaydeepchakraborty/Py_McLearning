@@ -4,6 +4,7 @@
 #https://www.youtube.com/watch?v=HMcx-zY8JSg&index=2&list=PL9Hr9sNUjfsmEu1ZniY0XpHSzl5uihcXZ
 #https://www.youtube.com/watch?v=JiN9p5vWHDY
 #https://www.youtube.com/watch?v=ixF5WNpTzCA
+#https://www.youtube.com/watch?v=HMcx-zY8JSg
 
 #sudo pip3 install tensorflow
 #sudo pip3 install tensorflow-gpu
