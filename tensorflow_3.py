@@ -1,4 +1,7 @@
-#This is an example of single layer neural network on mnist data 
+#This is an example of multi layer neural network on mnist data 
+
+# This is an example of multiple layer neural network on mnist data 
+#but the weights are initialized to random - good result
 
 #sudo pip3 install tensorflow
 #sudo pip3 install tensorflow-gpu
