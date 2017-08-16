@@ -1,6 +1,9 @@
 #sentiment analysis using deep neural network
 #check deeplearning_2
 
+#https://www.youtube.com/watch?v=RZYjsw6P4nI
+#https://www.youtube.com/watch?v=bPYJi1E9xeM
+#https://www.youtube.com/watch?v=7fcWfUavO7E&index=5&list=PLSPWNkAMSvv5DKeSVDbEbUKSsK4Z-GgiP
 #imports
 from collections import Counter
 import pickle
