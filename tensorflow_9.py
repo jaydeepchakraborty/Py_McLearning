@@ -58,7 +58,6 @@ try:
     tf_idf = preprocess(data)
      
     train_x,test_x,train_y,test_y = train_test_split(tf_idf,target,test_size=0.4,random_state=43,shuffle=True)
-
     
     n_classes = 2
     batch_size = 100#
