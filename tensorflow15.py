@@ -1,3 +1,4 @@
+#CNN on 2d data iris
 #https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/convolutional_network_raw.ipynb
 
 import tensorflow as tf

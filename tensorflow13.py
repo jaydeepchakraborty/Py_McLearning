@@ -7,6 +7,7 @@
 #http://www.ai-junkie.com/ann/som/som1.html
 #https://genome.tugraz.at/MedicalInformatics2/SOM.pdf
 
+#clustering using tensorflow
 
 
 #For plotting the images
