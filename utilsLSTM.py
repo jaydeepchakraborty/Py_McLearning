@@ -7,7 +7,9 @@ from tqdm import tqdm
 import numpy as np
 
 
-checkpoint_folder = "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/data/chkpoint/lstm/sentiment/" 
+# checkpoint_folder = "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/data/chkpoint/lstm/sentiment/" 
+checkpoint_folder = "/home/local/ASUAD/jchakra1/eclipse-workspace/python/Py_McLearning/data/chkpoint/lstm/sentiment"
+
 
 def clean_text(text, remove_stopwords=True):
     

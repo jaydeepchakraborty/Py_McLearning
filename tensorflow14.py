@@ -182,7 +182,9 @@ for lstm_size in [64,128]:
                               fc_units = fc_units)            
             train(model, epochs, x_train, y_train, x_valid, y_valid, batch_size, dropout, log_string)
 
-checkpoint_folder = "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/data/chkpoint/lstm/sentiment/" 
+# checkpoint_folder = "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/data/chkpoint/lstm/sentiment/" 
+checkpoint_folder = "/home/local/ASUAD/jchakra1/eclipse-workspace/python/Py_McLearning/data/chkpoint/lstm/sentiment"
+
 #you can choose any one saved checkpoint or more than one
 #For this example, we are using two checkpoints
 lstm_size = 64 
