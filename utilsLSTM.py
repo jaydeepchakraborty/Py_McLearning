@@ -74,9 +74,13 @@ def build_rnn(n_words, embed_size, batch_size, lstm_size, num_layers,
 
     # Build the RNN layers
     with tf.name_scope("RNN_layers"):
-        lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size)
-        drop = tf.contrib.rnn.DropoutWrapper(lstm, output_keep_prob=keep_prob)
-        cell = tf.contrib.rnn.MultiRNNCell([drop] * num_layers)
+        cells = []
+        for _ in range(num_layers):
+            lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size,state_is_tuple=True)
+            drop = tf.contrib.rnn.DropoutWrapper(lstm, output_keep_prob=keep_prob)
+            cells.append(drop)
+#         cell = tf.contrib.rnn.MultiRNNCell([drop] * num_layers, state_is_tuple=True)
+        cell = tf.contrib.rnn.MultiRNNCell(cells, state_is_tuple=True)
     
     # Set the initial state
     with tf.name_scope("RNN_init_state"):
@@ -272,3 +276,4 @@ def make_predictions(model, x_test, batch_size , checkpoint):
                 all_preds.append(float(pred))
                 
     return all_preds
+# sdfsf
