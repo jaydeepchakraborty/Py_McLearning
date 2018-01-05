@@ -28,7 +28,7 @@ from sklearn.model_selection import train_test_split
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from collections import namedtuple
-from utilsLSTM import clean_text,build_rnn,make_predictions
+from utilsLSTM import clean_text,build_rnn,make_predictions,train_rnn
 
 # Load the data
 train = pd.read_csv("data/labeledTrainData.tsv", delimiter="\t")
@@ -180,7 +180,7 @@ for lstm_size in [64,128]:
                               learning_rate = learning_rate,
                               multiple_fc = multiple_fc,
                               fc_units = fc_units)            
-            train(model, epochs, x_train, y_train, x_valid, y_valid, batch_size, dropout, log_string)
+            train_rnn(model, epochs, x_train, y_train, x_valid, y_valid, batch_size, dropout, log_string)
 
 # checkpoint_folder = "/Users/jaydeep/jaydeep_workstation/Workplace/Python/PyMcLearning/data/chkpoint/lstm/sentiment/" 
 checkpoint_folder = "/home/local/ASUAD/jchakra1/eclipse-workspace/python/Py_McLearning/data/chkpoint/lstm/sentiment"
